@@ -52,7 +52,7 @@ public class ActionServlet extends HttpServlet{
 		}else if(action.equals("/dianZan")){
 			String index=request.getParameter("index");
 			User user=(User) session.getAttribute("user");
-			System.out.println("当前用户是:"+user.getUsername()+" 题号是:"+index);
+			//System.out.println("当前用户是:"+user.getUsername()+" 题号是:"+index);
 			out.print("ok");
 		}
 	}
