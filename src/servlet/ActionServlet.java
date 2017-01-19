@@ -41,7 +41,7 @@ public class ActionServlet extends HttpServlet{
 			}
 		}else if(action.equals("/list")){
 			
-			//System.out.println("试题列表");
+			System.out.println("试题列表");
 			QuestionDao dao=new QuestionDao();
 			List<Question> questions =dao.findAllQuestions();
 			
